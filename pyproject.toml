@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "loaded-lecture-template"
+name = "assignment"
 version = "0.1.0"
 description = "Template for lecture notes with reveal.js presentations, latex dependencies, poetry, and VS Code extensions for Python."
 authors = ["Mauro J. Sanchirico III <156733573+mauro-j-sanchirico@users.noreply.github.com>"]
@@ -15,6 +15,8 @@ ipython = "^8.27.0"
 ipympl = "^0.9.4"
 scipy = "^1.14.1"
 latex = "^0.7.0"
+torch = "^2.4.1"
+torchvision = "^0.19.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.8.0"
