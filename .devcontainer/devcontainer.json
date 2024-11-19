@@ -1,11 +1,14 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "name": "practai",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "hostRequirements": {
         "cpus": 2
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "",
-    "postCreateCommand": "bash .devcontainer/configure_environment.sh",
+    "onCreateCommand": "sudo bash .devcontainer/configure_environment.sh",
+    "postAttachCommand": "bash .devcontainer/post_attach.sh",
     "customizations": {
         "codespaces": {
             "openFiles": []
